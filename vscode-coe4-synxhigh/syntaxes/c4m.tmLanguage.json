@@ -1,0 +1,291 @@
+
+{	
+	
+	"scopeName": "coe4.in.vscode",	
+	"name": "c4m CoE4 modding language",
+	"patterns": [
+
+		{ "include": "#kwsWeaponModding1" }, { "include": "#kwsWeaponModding2" },
+		{ "include": "#kwsWeaponModding3" }, { "include": "#kwsWeaponModding4" },
+		{ "include": "#kwsMonsterModding1" }, { "include": "#kwsMonsterModding2" },
+		{ "include": "#kwsMonsterModding3" }, { "include": "#kwsMonsterModding4" },
+		{ "include": "#kwsMonsterModding5" }, { "include": "#kwsMonsterModding6" },
+		{ "include": "#kwsMonsterModding7" }, { "include": "#kwsMonsterModding8" },
+		{ "include": "#kwsMonsterModding9" }, { "include": "#kwsMonsterModding10" },
+		{ "include": "#kwsMonsterModding11" }, { "include": "#kwsMonsterModding12" },
+		{ "include": "#kwsMonsterModding13" }, { "include": "#kwsMonsterModding14" },
+		{ "include": "#kwsMonsterModding15" }, { "include": "#kwsMonsterModding16" },
+		{ "include": "#kwsMonsterModding17" }, { "include": "#kwsMonsterModding18" },
+		{ "include": "#kwsMonsterModding19" }, { "include": "#kwsMonsterModding20" },
+		{ "include": "#kwsClassModding1" }, { "include": "#kwsClassModding2" },
+		{ "include": "#kwsClassModding3" }, { "include": "#kwsClassModding4" },
+		{ "include": "#kwsTerrainModding1" }, { "include": "#kwsTerrainModding2" },
+		{ "include": "#kwsTerrainModding3" }, { "include": "#kwsRitualModding1" },
+		{ "include": "#kwsRitualModding2" }, { "include": "#kwsRitualModding3" },
+		{ "include": "#kwsRitualModding4" }, { "include": "#kwsRitualModding5" },
+		{ "include": "#kwsRitualModding6" },
+		
+		{
+			"include": "#strings"
+		},
+		
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#digits"
+		}
+	],
+	"repository": {
+
+		"strings": {
+			"name": "string.quoted.double.c4m",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.c4m",
+					"match": "\\\\."
+				}
+			]
+		},
+
+		"kwsWeaponModding1": { 
+				"patterns": [{
+				"name": "keyword.control.c4m",
+				"match": "\\b(icon|description|modprio|playercolor|tablecolor|guibordertex|guiborder2tex|guiborder3tex|guiborderthintex|guibordersquaretex|guititletex|guibartex|guibardarktex|guihbartex|guisbartex)\\b"
+			}]
+		},
+		"kwsWeaponModding2": {
+				"patterns": [{
+				"name": "keyword.control.c4m",
+				"match": "\\b(newweapon|selectweapon|clearwspec|init|trgrank|mundane|dmgtype|dmg|aoe|look|sound|flylook|flysound|flymode|yellow|blue|next|nextdmg)\\b"
+			}]
+		},
+		"kwsWeaponModding3": { 
+				"patterns": [{
+				"name": "keyword.control.c4m",
+				"match": "\\b(nostr|shieldneg|an|playercolor|holykill|sweep|fullsweep|drain|oneshot|arrow|lob|scatter|rangepen|reload1|reload2|reload3|reanimate|ghoulify|dispossess|mutate|replicate)\\b"
+			}]
+		},
+		"kwsWeaponModding4": { 
+				"patterns": [{
+				"name": "keyword.control.c4m",
+				"match": "\\b(easymr|mr|hardmr|morale|hardmorale|stressist|poison|drown|flying|ethereal|undead|mind|inanimate|stone|huge|large|onlyenemy|onlyfriend|affectmale|affecthuman|affectundead|affectanimal)\\b"
+			}]
+		},
+		"kwsMonsterModding1": { 
+				"patterns": [{
+				"name": "keyword.control.c4m",
+				"match": "\\b(selectmonster|newmonster|name|descr|spr1|spr2|copyspr|look|lookslike|neverturn|clearspec|clearweapons|clearmove|size1x1|size2x2|hp|str|mor|mr|armor|rank|rearpos|frontpos|extraeyes)\\b"
+			}]
+		},
+		"kwsMonsterModding2": { 
+				"patterns": [{
+				"name": "keyword.control.c4m",
+				"match": "\\b(huge|flying|float|teleport|immobile|stationary|slow|fast|mountain|swamp|snow|water|noland|wateronly|tunnel|winteridle|stupid|horror|battlefast|battleslow|wall|passwall|trample|tramplexsize|loner)\\b"
+			}]
+		},
+		"kwsMonsterModding3": { 
+				"patterns": [{
+				"name": "keyword.control.c4m",
+				"match": "\\b(aggressive|swamp1|swamp2|desert1|desert2|deadforest1|deadforest2|mountain1|mountain2|jungle1|jungle2|money1|money2|forest1|forest2|temple1|temple2|coastal|south1|south2|nonruin1|north1|gates1|void2)\\b"
+			}]
+		},
+		"kwsMonsterModding4": { 
+				"patterns": [{
+				"name": "keyword.control.c4m",
+				"match": "\\b(aihold|aigoldrally|aipowcom1|aipowcom2|aipowcom3|ainofollower|aimaxshop|wander|infwander|hadeswander|maxsinners|forestheart|likestoburn|makeruin|changetemp)\\b"
+			}]
+		},
+		"kwsMonsterModding5": { 
+				"patterns": [{
+				"name": "keyword.control.c4m",
+				"match": "\\b(nametype|human|animal|troll|coldblood|undead|inanimate|stonebeing|noleader|unique|unimportant|setcreator|immortal|immortalap|reformloc|reformdestroy|planeshift|noplanecamo|homeplane|banishsurv|statue)\\b"
+			}]
+		},
+		"kwsMonsterModding6": { 
+				"patterns": [{
+				"name": "keyword.control.c4m",
+				"match": "\\b(acutesenses|spiritsight|stealth|foreststealth|snowstealthy|invisible|farsight|nocombat)\\b"
+			}]
+		},
+		"kwsMonsterModding7": { 
+				"patterns": [{
+				"name": "keyword.control.c4m",
+				"match": "\\b(noheal|fastheal|coldheal|regeneration|saner|voidsanity|eatvillage|minorstartaff)\\b"
+			}]
+		},
+		"kwsMonsterModding8": { 
+				"patterns": [{
+				"name": "keyword.control.c4m",
+				"match": "\\b(meleeweapon|meleeweaponbonus|meleeweaponlong|rangedweapon|rangedweaponbonus|rangedweapon25|rangedweapon50|prebatweapon|assassinweapon|siegeweapon)\\b"
+			}]
+		},
+		"kwsMonsterModding9": { 
+				"patterns": [{
+				"name": "keyword.control.c4m",
+				"match": "\\b(spellweapon|spellweaponbonus|spellweapon50|spellweaponsingle|spellrange|more1spells|more2spells|more3spells)\\b"
+			}]
+		},
+		"kwsMonsterModding10": { 
+				"patterns": [{
+				"name": "keyword.control.c4m",
+				"match": "\\b(fireres|coldres|poisonres|shockres|affres|iceprot|displaced|sleepres|charmres|diseaseres|swallowres|nonmaginvul|unaging|bluntres|slashres|pierceres|ethereal|badsight|noeyes|clumsy|shield|largeshield|airshield|lucky|vengeance|riverdmg|melt|hadesres)\\b"
+			}]
+		},
+		"kwsMonsterModding11": { 
+				"patterns": [{
+				"name": "keyword.control.c4m",
+				"match": "\\b(mirror|revertmirror|phantasm|releasephant|releaserate|releasespell|mirrorammo)\\b"
+			}]
+		},
+		"kwsMonsterModding12": { 
+				"patterns": [{
+				"name": "keyword.control.c4m",
+				"match": "\\b(meleeambush|spread|deployoutside)\\b"
+			}]
+		},
+		"kwsMonsterModding13": { 
+				"patterns": [{
+				"name": "keyword.control.c4m",
+				"match": "\\b(awe|fear|seduceaura|leadership|localleadership|fireaura|coldaura|shockaura|spikes|poisoncloud|poisonexpl|fireexpl|shardexpl|putridexpl|diseasecloud|mindexpl|nozoc|berserker|holy|digest|incorporate|hpoverflow|maxsum|acidblood)\\b"
+			}]
+		},
+		"kwsMonsterModding14": { 
+				"patterns": [{
+				"name": "keyword.control.c4m",
+				"match": "\\b(growhp|shrinkhp|growtime|growoffs|firstshape|secondshape|landshape|watershape)\\b"
+			}]
+		},
+		"kwsMonsterModding15": { 
+				"patterns": [{
+				"name": "keyword.control.c4m",
+				"match": "\\b(slavehunt|thrallhunt|spawnmonster|spawnmon|spawn1d6mon|spawn2d6mon|spawnoffs|spawnmonaway|reanimate|eatdead|eatdeadcap|absorbdead|motherspawn|makecolony)\\b"
+			}]
+		},
+		"kwsMonsterModding16": { 
+				"patterns": [{
+				"name": "keyword.control.c4m",
+				"match": "\\b(armytrainer|terraform|burnforest|scry|scrycost|sensedead|goldcarrier|ironcarrier|localironbonus|localgoldbonus|limitgold|limitiron|allrit|rebate)\\b"
+			}]
+		},
+		"kwsMonsterModding17": { 
+				"patterns": [{
+				"name": "keyword.control.c4m",
+				"match": "\\b(power|classcost|montag|ctrlchance|scrycost|mastery)\\b"
+			}]
+		},
+		"kwsMonsterModding18": { 
+				"patterns": [{
+				"name": "keyword.control.c4m",
+				"match": "\\b(gold|iron|trade|gatherherbs|gatherfungus|gathersacr|gatherhands|gatherweed|gathergems|gatherrelics)\\b"
+			}]
+		},
+		"kwsMonsterModding19": { 
+				"patterns": [{
+				"name": "keyword.control.c4m",
+				"match": "\\b(allitemslots|weaponslots|miscslots|nobootslot|noslots)\\b"
+			}]
+		},
+		"kwsMonsterModding20": {
+				"patterns": [{
+				"name": "keyword.control.c4m",
+				"match": "\\b(randomitem|randomweapon|randommisc|randomrare|indepitem|startitem)\\b"
+			}]
+		},
+		"kwsClassModding1": { 
+				"patterns": [{
+				"name": "keyword.control.c4m",
+				"match": "\\b(selectclass|newclass|setclassname|classdescr)\\b"
+			}]
+		},
+		"kwsClassModding2": { 
+				"patterns": [{
+				"name": "keyword.control.c4m",
+				"match": "\\b(hometerr|clearstartterr|addstartterr|reqterr)\\b"
+			}]
+		},
+		"kwsClassModding3": { 
+				"patterns": [{
+				"name": "keyword.control.c4m",
+				"match": "\\b(goldbonus|ironbonus|tradebonus)\\b"
+			}]
+		},
+		"kwsClassModding4": { 
+				"patterns": [{
+				"name": "keyword.control.c4m",
+				"match": "\\b(clearstartunits|addstartunits|addstartcom|setmaincom|clearrec|addunitrec|addmercrec|addcomrec|templerec|libraryrec|templebonusdescr|libbonusdescr|stdtroops|nostdtroops|recwizchance|recherochance|recasschance)\\b"
+			}]
+		},
+		"kwsTerrainModding1": {
+				"patterns": [{
+				"name": "keyword.control.c4m",
+				"match": "\\b(selectterr|spr|clearspec|clearfort|name|apcost|ownable|rare|gold|iron|trade|herbs|fungus|weed|sacr|dead|hands|goldboost|ironboost|tradeboost|harvest|pop|relic1|relic2|relicm1|relicm2)\\b"
+			}]
+		},
+		"kwsTerrainModding2": {
+				"patterns": [{
+				"name": "keyword.control.c4m",
+				"match": "\\b(forest|mountain|water|cave|mine|burnable|snowok|desertok|eastcoast|deepspawn|nostart|settlement|library1|library2|temple|el|hoburg|useable|farsight|nosight|invseason|spreadcold|melts|smoke|invisible)\\b"
+			}]
+		},
+		"kwsTerrainModding3": {
+				"patterns": [{
+				"name": "keyword.control.c4m",
+				"match": "\\b(voidret|earthgate|airgate|watergate|firegate|citadel|siegeable|woodencitadel|forestcitadel|walls|highwalls|widebattlements|woodengate|irongate|enchantedgate|extracover|sidegates|widegate|nostdrec)\\b"
+			}]
+		},
+		"kwsRitualModding1": { 
+				"patterns": [{
+				"name": "keyword.control.c4m",
+				"match": "\\b(newritpow|newritual|selectritual|ritpow|level|addstring|clearritspec|soundfx|centercaster|closewin|terr|levelreq|nomonreq|nomonworldreq|nofortreq|fortreq|hasportalreq|planereq|enchherereq|benrestrict|resrestrict|resreq)\\b"
+			}]
+		},
+		"kwsRitualModding2": { 
+				"patterns": [{
+				"name": "keyword.control.c4m",
+				"match": "\\b(cost|apcost|varcost|rebatefx25|rebatefx50|rebateterr20|rebateterr50|rebatelvl|summoning|farsummon|defctrl|setplayer|failplayer|raisedead|raiseanimals|simulacrum|terrboost|terrscale50|sacrscale|sum0chance|sum1chance)\\b"
+			}]
+		},
+		"kwsRitualModding3": { 
+				"patterns": [{
+				"name": "keyword.control.c4m",
+				"match": "\\b(castertarg|chooseterrloc|setplane|randomloc|chooseloc|planeloc|randterrloc|randnewloc|newlocplanes)\\b"
+			}]
+		},
+		"kwsRitualModding4": { 
+				"patterns": [{
+				"name": "keyword.control.c4m",
+				"match": "\\b(centerloc|trollifyloc|reducetown|destroyterr|alterloc|squarespec|scryloc|scatterscry|teleportloc|makeportal|squareench|updatehome|planeswap|unfollowtarg|transformtarg|setvar|bentarg|bentargvar|bentargall|gainbless)\\b"
+			}]
+		},
+		"kwsRitualModding5": { 
+				"patterns": [{
+				"name": "keyword.control.c4m",
+				"match": "\\b(ornext|ornext2|ornext3|mirrortarg|fillmirror|killtarg)\\b"
+			}]
+		},
+		"kwsRitualModding6": { 
+				"patterns": [{
+				"name": "keyword.control.c4m",
+				"match": "\\b(levelup|levelupmon|promotion|forgetrits|free|start|nostart|rarestart|nexttoo|noundead|nodemon|notforpoor|gainrit|newrit|newspell1|newspell2|newspell3)\\b"
+			}]
+		},
+		"comments": {
+				"patterns": [{
+				"name": "comment.c4m",
+				"match": "\\#(.*)"
+			}]
+		},
+
+		"digits": {
+				"patterns": [{
+				"name": "constant.language.c4m",
+				"match": "[0-9]"
+			}]
+		}
+
+		
+	}
+}

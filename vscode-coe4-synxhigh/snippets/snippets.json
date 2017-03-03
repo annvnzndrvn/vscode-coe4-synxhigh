@@ -1,0 +1,51 @@
+
+{
+	"New Monster": {
+		"prefix": "newmonster-snip",
+		"body": [
+			"newmonster \"Monster\"",
+			"descr \"A monster from the darkest plane of the darkest planes\"",
+			"spr1 \"path-to-file.tga\"",
+			"spr2 \"path-to-file.tga\"",
+			"hp 1",
+			"str 1",
+			"mor 1",
+			"mr 1",
+			"armor 1"			
+		],
+		"description": "Create a new MONSTER with basic attributes"
+	},
+	"New Weapon": {
+		"prefix": "newweapon-snip",
+		"body": [
+			"newweapon \"Weapon\"",
+
+			"init 1",
+			"trgrank 1",
+			"mundane",
+			"dmgtype 1",
+			"dmg 1",
+			"aoe 1"
+		],
+		"description": "Create a new WEAPON with basic attributes"
+	},
+	"New Class": {
+		"prefix": "newclass-snip",
+		"body": [
+			"newclass",
+			"setclassname \"Class\"",
+			"classdescr \"This new Class is superpowerfully awesome!\"",
+
+			"setmaincom \"Main Commander\"",
+
+			"addstartunits \"Monster\"",
+			"addunitrec \"Monster\"",
+			"addcomrec \"Monster\"",
+			
+			"nostdtroops"
+		],
+		"description": "Create a new CLASS with basic attributes"
+	}
+}
+
+

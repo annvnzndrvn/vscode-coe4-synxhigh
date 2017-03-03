@@ -1,0 +1,32 @@
+{
+    "name": "vscode-coe4-synxhigh",
+    "displayName": "vscode.coe4.synxhigh",
+    "description": "Code highlighting syntax for CoE4 modding.",
+    "version": "0.0.1",
+    "publisher": "annvnzndrvn",
+    "engines": {
+        "vscode": "^1.10.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "c4m",
+            "aliases": ["c4m CoE4 modding language", "c4m"],
+            "extensions": [".c4m"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "c4m",
+            "scopeName": "coe4.in.vscode",
+            "path": "./syntaxes/c4m.tmLanguage.json"
+        }],
+        "snippets": [
+            {
+                "language": "c4m",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}
