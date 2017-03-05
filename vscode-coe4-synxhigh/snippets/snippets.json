@@ -1,7 +1,7 @@
 
 {
 	"New Monster": {
-		"prefix": "newmonster-snip",
+		"prefix": "snip-newmonster",
 		"body": [
 			"newmonster \"Monster\"",
 			"descr \"A monster from the darkest plane of the darkest planes\"",
@@ -15,8 +15,30 @@
 		],
 		"description": "Create a new MONSTER with basic attributes"
 	},
+	"New Turret": {
+		"prefix": "snip-newturret",
+		"body": [
+			"newmonster \"Turret\"",
+			"descr \"A stationary defense that rains death upon your enemies.\"",
+			"spr1 \"path-to-file.tga\"",
+			"spr2 \"path-to-file.tga\"",
+			"hp 1",
+			"str 1",
+			"mor 1",
+			"mr 1",
+			"armor 1",
+			"immobile",
+			"stationary",
+			"inanimate",
+			"noleader",
+			"noheal",
+			"rangedweapon 1 \"weapon\""
+
+		],
+		"description": "Create a new MONSTER with stationary defense attributes"
+	},
 	"New Weapon": {
-		"prefix": "newweapon-snip",
+		"prefix": "snip-newweapon",
 		"body": [
 			"newweapon \"Weapon\"",
 
@@ -30,7 +52,7 @@
 		"description": "Create a new WEAPON with basic attributes"
 	},
 	"New Class": {
-		"prefix": "newclass-snip",
+		"prefix": "snip-newclass",
 		"body": [
 			"newclass",
 			"setclassname \"Class\"",
