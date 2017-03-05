@@ -1,0 +1,73 @@
+
+{
+	"New Monster": {
+		"prefix": "snip-newmonster",
+		"body": [
+			"newmonster \"Monster\"",
+			"descr \"A monster from the darkest plane of the darkest planes\"",
+			"spr1 \"path-to-file.tga\"",
+			"spr2 \"path-to-file.tga\"",
+			"hp 1",
+			"str 1",
+			"mor 1",
+			"mr 1",
+			"armor 1"			
+		],
+		"description": "Create a new MONSTER with basic attributes"
+	},
+	"New Turret": {
+		"prefix": "snip-newturret",
+		"body": [
+			"newmonster \"Turret\"",
+			"descr \"A stationary defense that rains death upon your enemies.\"",
+			"spr1 \"path-to-file.tga\"",
+			"spr2 \"path-to-file.tga\"",
+			"hp 1",
+			"str 1",
+			"mor 1",
+			"mr 1",
+			"armor 1",
+			"immobile",
+			"stationary",
+			"inanimate",
+			"noleader",
+			"noheal",
+			"rangedweapon 1 \"weapon\""
+
+		],
+		"description": "Create a new MONSTER with stationary defense attributes"
+	},
+	"New Weapon": {
+		"prefix": "snip-newweapon",
+		"body": [
+			"newweapon \"Weapon\"",
+
+			"init 1",
+			"trgrank 1",
+			"mundane",
+			"dmgtype 1",
+			"dmg 1",
+			"aoe 1"
+		],
+		"description": "Create a new WEAPON with basic attributes"
+	},
+	"New Class": {
+		"prefix": "snip-newclass",
+		"body": [
+			"newclass",
+			"setclassname \"Class\"",
+			"classdescr \"This new Class is superpowerfully awesome!\"",
+
+			"setmaincom \"Main Commander\"",
+
+			"addstartunits \"Monster\"",
+			"addunitrec \"Monster\"",
+			"addcomrec \"Monster\"",
+			
+			"nostdtroops"
+		],
+		"description": "Create a new CLASS with basic attributes"
+	}
+}
+
+

@@ -23,7 +23,8 @@
 		{ "include": "#kwsTerrainModding3" }, { "include": "#kwsRitualModding1" },
 		{ "include": "#kwsRitualModding2" }, { "include": "#kwsRitualModding3" },
 		{ "include": "#kwsRitualModding4" }, { "include": "#kwsRitualModding5" },
-		{ "include": "#kwsRitualModding6" },
+		{ "include": "#kwsRitualModding6" }, { "include": "#kwsEventModding" },
+
 		
 		{
 			"include": "#strings"
@@ -34,6 +35,9 @@
 		},
 		{
 			"include": "#digits"
+		},
+		{
+			"include": "#dice"
 		}
 	],
 	"repository": {
@@ -50,6 +54,13 @@
 			]
 		},
 
+		"kwsEventModding": { 
+				"patterns": [{
+				"name": "keyword.control.c4m",
+				"match": "\\b(squareevent|turnnbr|promoteunits)\\b"
+			}]
+		},
+
 		"kwsWeaponModding1": { 
 				"patterns": [{
 				"name": "keyword.control.c4m",
@@ -59,7 +70,7 @@
 		"kwsWeaponModding2": {
 				"patterns": [{
 				"name": "keyword.control.c4m",
-				"match": "\\b(newweapon|selectweapon|clearwspec|init|trgrank|mundane|dmgtype|dmg|aoe|look|sound|flylook|flysound|flymode|yellow|blue|next|nextdmg)\\b"
+				"match": "\\b(d|newweapon|selectweapon|clearwspec|init|trgrank|mundane|range|dmgtype|dmg|aoe|look|sound|flylook|flysound|flymode|yellow|blue|next|nextdmg)\\b"
 			}]
 		},
 		"kwsWeaponModding3": { 
@@ -272,6 +283,7 @@
 				"match": "\\b(levelup|levelupmon|promotion|forgetrits|free|start|nostart|rarestart|nexttoo|noundead|nodemon|notforpoor|gainrit|newrit|newspell1|newspell2|newspell3)\\b"
 			}]
 		},
+
 		"comments": {
 				"patterns": [{
 				"name": "comment.c4m",
@@ -283,6 +295,13 @@
 				"patterns": [{
 				"name": "constant.language.c4m",
 				"match": "[0-9]"
+			}]
+		},
+
+		"dice": {
+				"patterns": [{
+				"name": "constant.language.c4m",
+				"match": "([0-9])*(d)([0-9])*\\d"
 			}]
 		}
 
